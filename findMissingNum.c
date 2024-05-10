@@ -1,6 +1,9 @@
 #include<stdio.h>
 int main(){
-    long long int multi;
+    int testCase;
+    scanf("%d",&testCase);
+    while(testCase--){
+        long long int multi;
     int a,b,c;
     scanf("%lld %d %d %d",&multi,&a,&b,&c);
     if(multi<=0){
@@ -20,5 +23,6 @@ int main(){
       }
     }
 
+    }
     return 0;
 }
