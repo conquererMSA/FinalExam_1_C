@@ -3,14 +3,23 @@ int main(){
     int testCase;
     scanf("%d",&testCase);
     while(testCase--){
-        int len;
+    int len;
     scanf("%d",&len);
     int a[len], b[len], c[len];
-    int j=len-1;
     for(int i=0; i<len; i++){
         scanf("%d",&a[i]);
-        b[j]=a[i];
-        j--;
+        b[i]=a[i];
+    }
+    //ascendig  b array
+    for(int i=0; i<len-1; i++){
+        for(int j=i+1; j<len; j++){
+            if(b[j]<b[i]){
+                int temp=b[i];
+                b[i]=b[j];
+                b[j]=temp;
+
+            }
+        }
     }
     for(int i=0; i<len; i++){
        if(a[i]-b[i]<0){

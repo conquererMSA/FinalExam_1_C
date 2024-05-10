@@ -18,6 +18,5 @@ int main(){
     for(int j=0; j<row; j++){
         printf("%d ",a[j][col-1]);
        }
-       printf("\n");
     return 0;
 }
